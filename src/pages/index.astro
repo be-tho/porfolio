@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import Github from '../components/icons/Github.astro';
+import Mail from '../components/icons/Mail.astro';
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+
+---
+
+<Layout title="Porfolio de Albert - Desarrollador y Programador web con 3 años de expericencia">
+	<main class="mx-auto">
+		<SectionContainer>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hey, soy Albert
+				<a
+					target="_blank"
+					href="http://www.linkedin.com/in/yiye-albert-villarroel"
+					class="flex justify-center items-center"
+					rel="noopener"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap">+3 años de experiencia. Desarrollando Web. De Buenos Aires Argentina  . Especializado en crear aplicaciones únicas</h2>
+			<div class="flex gap-x-2 my-8">
+				<div>
+					<a href="http://www.linkedin.com/in/yiye-albert-villarroel"
+					   class="rounded-full border border-white/10 flex justify-center items-center  gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+					>
+						<LinkedIn class="w-6 h-6" />
+						LinkedIn
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/be-tho"
+					   class="rounded-full border border-white/10 flex justify-center items-center  gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+					>
+						<Github class="w-6 h-6" />
+						Github
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/be-tho"
+					   class="rounded-full border border-white/10 flex justify-center items-center  gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+					>
+						<Mail class="w-6 h-6" />
+						yiyevp@gmail.com
+					</a>
+				</div>
+			</div>
+		</SectionContainer>
+		<SectionContainer>
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Briefcase class="size-7" />
+				Experiencia Laboral
+			</h2>
+
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
